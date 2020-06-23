@@ -1,0 +1,27 @@
+package com.codeWithArsalon.Executors;
+
+public class Quote {
+
+    private final String site;
+    private final int price; //real world, float value
+
+    public Quote(String site, int price) {
+        this.site = site;
+        this.price = price;
+    }
+
+    public String getSite() {
+        return site;
+    }
+    public int getPrice() {
+        return price;
+    }
+
+    @Override
+    public String toString() {
+        return "Quote{" +
+                "site='" + site + '\'' +
+                ", price=" + price +
+                '}';
+    }
+}
